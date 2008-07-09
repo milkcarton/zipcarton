@@ -1,0 +1,41 @@
+﻿/*
+ Copyright (c) 2008 Simon Schoeters
+ 
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ 
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ 
+ Created by Bianka Nagy on 2008.07.09.
+*/
+
+// Menu items
+"MENU_LABEL" = "%@ postai irányítószáma";
+// Buttons
+"OPEN" = "Kinyit";
+"CANCEL" = "Mégse";
+// Dialogs
+"TOO_MANY_RESULTS_TITLE" = "Too many results";
+"TOO_MANY_RESULTS_BODY" = "The search for \"%@\" returned %i results, it's impossible to guess which one is right. Would you like to open a webpage with all the possible matches?";
+// Log messages
+"TOO_MANY_RESULTS_TITLE" = "Tùl sok eredmény"; 
+"TOO_MANY_RESULTS_BODY" = "%@ postai irányítószám keresése %i eredményt talált. Nem lehetséges kitalálni melyik a helyes postai irányítószám. Szeretné kinyitni a weboldalt az összes lehetséges egyeztetéssel?";
+"NO_CODE_FOUND" = "%@ postai irányítószáma nem találhato meg";
+"NO_CODE_FOUND_FOR" = "%@ postai irányítószámát nem találta meg %@ (%@)";
+"NO_ISO_FOR" = "%@ országos ISO kódját nem találta meg";
