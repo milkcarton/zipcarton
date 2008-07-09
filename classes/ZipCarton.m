@@ -56,8 +56,7 @@
 // This method is called when the user selects the action.
 - (void)performActionForPerson:(ABPerson *)person identifier:(NSString *)identifier
 {
-    ABMultiValue* tmp = [person valueForProperty:[self actionProperty]];
-	ABMutableMultiValue *addresses = [tmp mutableCopy];
+    ABMultiValue* addresses = [person valueForProperty:[self actionProperty]];
     NSDictionary* address = [addresses valueForIdentifier:identifier];
 
 	// Find the postal code for this city.
@@ -86,11 +85,12 @@
 			[addr setObject:[address valueForKey:kABAddressCountryKey] forKey:kABAddressCountryKey];
 		}
 	
+		ABMutableMultiValue* multiValue = [[ABMutableMultiValue alloc] init];
+		[multiValue addValue:addr withLabel:kABAddressHomeLabel];
+	
 		// Set value in record for the kABAddressProperty.
-		BOOL replaced = [addresses replaceValueAtIndex:[addresses indexForIdentifier:identifier] withValue:addr];
-		if (replaced) {
-			[person setValue:addresses forProperty:kABAddressProperty];
-		}
+		[person setValue: multiValue forProperty: kABAddressProperty];
+		[multiValue release];
 	
 		// Add record to the Address Book and save it (Address Book changes it in memory first, not on disk).
 		ABAddressBook *ab = [ABAddressBook sharedAddressBook];
