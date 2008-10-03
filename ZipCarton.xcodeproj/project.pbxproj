@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		72E3845E04BE07B500C808FE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E3845D04BE07B500C808FE /* AddressBook.framework */; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		F421C4F70E95518B00DFE06A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F421C4F50E95518B00DFE06A /* LICENSE */; };
+		F421C4F80E95518B00DFE06A /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = F421C4F60E95518B00DFE06A /* NOTICE */; };
 		F45ABB370E242B2F00E4ABC5 /* ZipCarton.m in Sources */ = {isa = PBXBuildFile; fileRef = F45ABB360E242B2F00E4ABC5 /* ZipCarton.m */; };
 		F45ABB3D0E242BA800E4ABC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45ABB3B0E242BA800E4ABC5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -19,6 +21,9 @@
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* ZipCarton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipCarton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		F421C4CF0E9547DD00DFE06A /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F421C4F50E95518B00DFE06A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F421C4F60E95518B00DFE06A /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
 		F45ABB350E242B2F00E4ABC5 /* ZipCarton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCarton.h; path = classes/ZipCarton.h; sourceTree = "<group>"; };
 		F45ABB360E242B2F00E4ABC5 /* ZipCarton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipCarton.m; path = classes/ZipCarton.m; sourceTree = "<group>"; };
 		F45ABB3C0E242BA800E4ABC5 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -41,6 +46,8 @@
 		0259C574FE90428111CA0C5A /* ZipCarton */ = {
 			isa = PBXGroup;
 			children = (
+				F421C4F50E95518B00DFE06A /* LICENSE */,
+				F421C4F60E95518B00DFE06A /* NOTICE */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
@@ -144,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45ABB3D0E242BA800E4ABC5 /* Localizable.strings in Resources */,
+				F421C4F70E95518B00DFE06A /* LICENSE in Resources */,
+				F421C4F80E95518B00DFE06A /* NOTICE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			children = (
 				F45ABB3C0E242BA800E4ABC5 /* English */,
 				F45ABB3E0E242BE100E4ABC5 /* Dutch */,
+				F421C4CF0E9547DD00DFE06A /* German */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

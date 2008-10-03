@@ -1,4 +1,4 @@
-Listed below are all the frameworks ZipCarton uses with their license and developers (only one so far). A huge thank you to all people in this list, ZipCarton wouldn't be possible without all of you!
+Listed below are all the frameworks ZipCarton uses with their license and developers (only one so far) or people who contributed otherwise. A huge thank you to all people in this list below, ZipCarton wouldn't be possible without all of you!
 
 GeoNames webservices
 ====================
@@ -7,4 +7,9 @@ Uses the Geonames webservices API for the translation of a country name in their
 
 License: 	Creative Commons Attribution License
 URL: 		http://www.geonames.org/
-Developers:	Marc Wick, Bernard Vatant, Christophe B. 
+Developers:	Marc Wick, Bernard Vatant, Christophe B.
+
+Localization
+============
+
+German		Jan-Gerd Tenberge		http://janten.com
