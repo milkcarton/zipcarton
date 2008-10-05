@@ -28,6 +28,7 @@
 		F45ABB360E242B2F00E4ABC5 /* ZipCarton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipCarton.m; path = classes/ZipCarton.m; sourceTree = "<group>"; };
 		F45ABB3C0E242BA800E4ABC5 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F45ABB3E0E242BE100E4ABC5 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4B270250E99575E005F2801 /* Danish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Danish; path = Danish.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4BDC0F20E98D1A200E61891 /* Brazilian Portuguese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "Brazilian Portuguese"; path = "Brazilian Portuguese.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +138,7 @@
 				German,
 				Dutch,
 				"Brazilian Portuguese",
+				Danish,
 			);
 			mainGroup = 0259C574FE90428111CA0C5A /* ZipCarton */;
 			projectDirPath = "";
@@ -179,6 +181,7 @@
 				F45ABB3E0E242BE100E4ABC5 /* Dutch */,
 				F421C4CF0E9547DD00DFE06A /* German */,
 				F4BDC0F20E98D1A200E61891 /* Brazilian Portuguese */,
+				F4B270250E99575E005F2801 /* Danish */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
