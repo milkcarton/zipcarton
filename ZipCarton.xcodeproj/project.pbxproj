@@ -24,6 +24,8 @@
 		F421C4CF0E9547DD00DFE06A /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F421C4F50E95518B00DFE06A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F421C4F60E95518B00DFE06A /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		F4224D5E0ECA19C8000EC5B5 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4224D650ECA1AB5000EC5B5 /* Catalan */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Catalan; path = Catalan.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F45ABB350E242B2F00E4ABC5 /* ZipCarton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZipCarton.h; path = classes/ZipCarton.h; sourceTree = "<group>"; };
 		F45ABB360E242B2F00E4ABC5 /* ZipCarton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZipCarton.m; path = classes/ZipCarton.m; sourceTree = "<group>"; };
 		F45ABB3C0E242BA800E4ABC5 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -139,6 +141,8 @@
 				Dutch,
 				"Brazilian Portuguese",
 				Danish,
+				Spanish,
+				Catalan,
 			);
 			mainGroup = 0259C574FE90428111CA0C5A /* ZipCarton */;
 			projectDirPath = "";
@@ -182,6 +186,8 @@
 				F421C4CF0E9547DD00DFE06A /* German */,
 				F4BDC0F20E98D1A200E61891 /* Brazilian Portuguese */,
 				F4B270250E99575E005F2801 /* Danish */,
+				F4224D5E0ECA19C8000EC5B5 /* Spanish */,
+				F4224D650ECA1AB5000EC5B5 /* Catalan */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
