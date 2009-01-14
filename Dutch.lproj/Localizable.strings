@@ -30,9 +30,12 @@
 // Buttons
 "OPEN" = "Open";
 "CANCEL" = "Annuleren";
+"REPLACE" = "Vervangen";
 // Dialogs
 "TOO_MANY_RESULTS_TITLE" = "Te veel resultaten";
 "TOO_MANY_RESULTS_BODY" = "De zoekopdracht voor \"%@\" vond %i resultaten. De juiste postcode kan niet gekozen worden. Wil je graag een webpagina openen met de mogelijke resultaten?";
+"SHORTEN_CODE_TITLE" = "Korter resultaat gevonden";
+"SHORTEN_CODE" = "De nieuwe postcode \"%@\" is korter dan de huidige \"%@\". Ben je zeker dat je deze wilt vervangen?";
 // Log messages
 "NO_CODE_FOUND" = "Geen postcode gevonden voor %@";
 "NO_CODE_FOUND_FOR" = "Geen postcode gevonden voor %@ in %@ (%@)";

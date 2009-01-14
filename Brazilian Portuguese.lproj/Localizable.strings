@@ -30,9 +30,12 @@
 // Buttons
 "OPEN" = "Abrir";
 "CANCEL" = "Cancelar";
+"REPLACE" = "Substituir";
 // Dialogs
 "TOO_MANY_RESULTS_TITLE" = "Muitos resultados";
 "TOO_MANY_RESULTS_BODY" = "A pesquisa por \"%@\" retornou %i resultados, é impossível saber qual é o correto. Você gostaria de abrir uma página na internet com todos os resultados possíveis?";
+"SHORTEN_CODE_TITLE" = "Encontrado resultado mais curto";
+"SHORTEN_CODE" = "O novo código postal \"%@\" é mais curto que o atual \"%@\". Você tem certeza de que quer substituí-lo?";
 // Log messages
 "NO_CODE_FOUND" = "Não foi encontrado código postal para %@";
 "NO_CODE_FOUND_FOR" = "Não foi encontrado código postal para %@ em %@ (%@)";

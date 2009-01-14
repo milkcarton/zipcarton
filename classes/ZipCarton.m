@@ -67,6 +67,20 @@
 	NSString *postalCode = nil;
 	if ([countryISO length] || ![address valueForKey:kABAddressCountryKey]) {
 		postalCode = [self postalCodeForCity:[address valueForKey:kABAddressCityKey] country:countryISO];
+		
+		// Ask confirmation if the code in Address Book is not more accurate then the returned result
+		// eg. BD16 4UN is Bingley, UK but GeoNames returns BD16, it's stupid to override the users value in this case
+		NSString *ABpostalCode = [address valueForKey:kABAddressZIPKey];
+		if ([postalCode caseInsensitiveCompare:ABpostalCode] != NSOrderedSame && [ABpostalCode hasPrefix:postalCode]) {
+			int replace = NSRunAlertPanel(MCLocalizedString(@"SHORTEN_CODE_TITLE"),
+										  [NSString stringWithFormat:MCLocalizedString(@"SHORTEN_CODE"), postalCode, ABpostalCode],
+										  MCLocalizedString(@"REPLACE"),
+										  MCLocalizedString(@"CANCEL"),
+										  NULL);
+			if (replace != NSAlertDefaultReturn) {
+				postalCode = @"";
+			}
+		}
 	}
 
 	if ([postalCode length]) {

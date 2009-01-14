@@ -30,9 +30,12 @@
 // Buttons
 "OPEN" = "Åben";
 "CANCEL" = "Fortryd";
+"REPLACE" = "Erstat";
 // Dialogs
 "TOO_MANY_RESULTS_TITLE" = "For Mange Resultater";
 "TOO_MANY_RESULTS_BODY" = "Søgningen for \"%@\" returnerede %i resultater, så det er ikke muligt at gætte hvilket er det rigtige. Vil du åbne en webside med alle resultaterne?";
+"SHORTEN_CODE_TITLE" = "Kortere Resultat Fundet";
+"SHORTEN_CODE" = "Det nye postnummer \"%@\" er kortere end det nuværende \"%@\". Er du sikker på at du vil erstatte det?";
 // Log messages
 "NO_CODE_FOUND" = "Intet postnummer fundet for %@";
 "NO_CODE_FOUND_FOR" = "Intet postnummer fundet for %@ i %@ (%@)";
