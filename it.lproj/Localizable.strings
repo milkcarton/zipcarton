@@ -1,5 +1,5 @@
 ﻿/*
- Copyright (c) 2008 Simon Schoeters
+ Copyright (c) 2009 Vincenzo Altieri
  
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -22,22 +22,22 @@
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  OTHER DEALINGS IN THE SOFTWARE.
  
- Created by Simon Schoeters on 2008.07.06.
+ Created by Vincenzo Altieri on 2009.01.15.
 */
 
 // Menu items
-"MENU_LABEL" = "Postcode van %@";
+"MENU_LABEL" = "Codice di Avviamento Postale di %@";
 // Buttons
-"OPEN" = "Open";
-"CANCEL" = "Annuleren";
-"REPLACE" = "Vervangen";
+"OPEN" = "Apri";
+"CANCEL" = "Annulla";
+"REPLACE" = "Sostituisci";
 // Dialogs
-"TOO_MANY_RESULTS_TITLE" = "Te veel resultaten";
-"TOO_MANY_RESULTS_BODY" = "De zoekopdracht voor \"%@\" vond %i resultaten. De juiste postcode kan niet gekozen worden. Wil je graag een webpagina openen met de mogelijke resultaten?";
-"SHORTEN_CODE_TITLE" = "Korter resultaat gevonden";
-"SHORTEN_CODE" = "De nieuwe postcode \"%@\" is korter dan de huidige \"%@\". Ben je zeker dat je deze wilt vervangen?";
+"TOO_MANY_RESULTS_TITLE" = "Troppi risultati";
+"TOO_MANY_RESULTS_BODY" = "La Ricerca per \"%@\" ha dato %i risultati, it's impossible selezionare quello corretto. Ti piacerebbe aprire la pagina Web con tutti i possibili risutati?";
+"SHORTEN_CODE_TITLE" = "Shorter result found";
+"SHORTEN_CODE" = "Il nuovo Codice di Avviamento Postale \"%@\" è più corto di quello selezionato \"%@\". Sei sicuro di volerlo sostituire?";
 // Log messages
-"NO_CODE_FOUND" = "Geen postcode gevonden voor %@";
-"NO_CODE_FOUND_FOR" = "Geen postcode gevonden voor %@ in %@ (%@)";
-"NO_ISO_FOR" = "Geen ISO landcode gevonden voor %@";
-"NO_COUNTRY" = "Geen land opgegeven";
+"NO_CODE_FOUND" = "Non è stato trovato nessun Codice di Avviamento Postale per %@";
+"NO_CODE_FOUND_FOR" = "Non è stato trovato nessun Codice di Avviamento Postale per %@ a %@ (%@)";
+"NO_ISO_FOR" = "Non è stato trovato il codice ISO per la Nazione %@";
+"NO_COUNTRY" = "Non hai assegnato la Nazione";
