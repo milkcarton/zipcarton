@@ -1,0 +1,43 @@
+﻿/*
+ Copyright (c) 2009 Daisuke ITO
+ 
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ 
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ 
+ Created by Daisuke ITO on 2009.01.19.
+*/
+
+// Menu items
+"MENU_LABEL" = "%@の郵便番号";
+// Buttons
+"OPEN" = "開く";
+"CANCEL" = "キャンセル";
+"REPLACE" = "置換";
+// Dialogs
+"TOO_MANY_RESULTS_TITLE" = "結果が複数あります";
+"TOO_MANY_RESULTS_BODY" = "\"%@\の検索結果は%i個あり、どれが正しいか分かりません。ウェブページを開き、確認しますか?";
+"SHORTEN_CODE_TITLE" = "新しい結果を見つけました。";
+"SHORTEN_CODE" = "郵便番号\"%@\"は、現在の\"%@\"より新しいです。置き換えますか?";
+// Log messages
+"NO_CODE_FOUND" = "%@に対応する結果が見つかりませんでした";
+"NO_CODE_FOUND_FOR" = "%@ (%@)の中に、郵便番号%@は見つかりませんでした";
+"NO_ISO_FOR" = "ISOコード%@に対応する国が見つかりませんでした";
+"NO_COUNTRY" = "対応する国がありません";

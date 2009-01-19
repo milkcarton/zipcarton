@@ -140,8 +140,10 @@
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSURL *url = [NSURL URLWithString:urlString];
 
+	// TODO: Timeout when service is unavailable
+	
 	// Initialize our document with the XML data in our URL	
-	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:nil error:nil];
+	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:(NSStringEncoding)nil error:nil];
 
 	// Get a reference to the root node and check if there are any results found
 	NSXMLElement *rootNode = [xmlDoc rootElement];
@@ -190,7 +192,7 @@
 		NSURL *url = [NSURL URLWithString:urlString];
 
 		// Initialize our document with the XML data in our URL	
-		NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:nil error:nil];
+		NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:(NSStringEncoding)nil error:nil];
 
 		// Get a reference to the root node and check if there are any results found
 		NSXMLElement *rootNode = [xmlDoc rootElement];
