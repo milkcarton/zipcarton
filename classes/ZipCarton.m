@@ -248,7 +248,14 @@
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
 	NSData *urlData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithData:urlData options:(NSUInteger)nil error:nil];
+
+	if(urlData == nil) {
+		NSLog(@"Fallback to ws5.geonames.org");
+		wsType = @"ws5";
+		return;
+	}
+	
+	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithData:urlData options:(NSInteger)nil error:nil];
 	NSXMLElement *rootNode = [xmlDoc rootElement];
 
 	if (rootNode == nil) {
