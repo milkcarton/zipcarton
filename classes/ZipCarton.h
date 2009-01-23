@@ -30,6 +30,7 @@
 
 @interface FindPostalCode : NSObject
 {
+	@private NSString *wsType;
 }
 
 // Returns the property this action is for.
@@ -57,6 +58,11 @@
 
 // Filters the returned list for this city to more relevant results (only exact matches)
 - (NSArray *)filterList:(NSArray *)unfiltered filter:(NSString *)filter;
+
+// TODO improve the fallback method
+// 2009.01 There is a problem with an overloaded GeoNames: ws.geonames.org does not work.
+// They created a temporary ws5.geonames.org so we use that as a fallback for now.
+- (void)wsType;
 
 @end
 

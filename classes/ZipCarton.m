@@ -56,6 +56,7 @@
 // This method is called when the user selects the action.
 - (void)performActionForPerson:(ABPerson *)person identifier:(NSString *)identifier
 {
+	[self wsType];
     ABMultiValue* tmp = [person valueForProperty:[self actionProperty]];
 	ABMutableMultiValue *addresses = [tmp mutableCopy];
     NSDictionary* address = [addresses valueForIdentifier:identifier];
@@ -136,12 +137,12 @@
 
 - (NSString *)postalCodeForCity:(NSString *)city country:(NSString *)country
 {
-	NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/postalCodeSearch?placename=%@&country=%@&style=short", city, country];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@.geonames.org/postalCodeSearch?placename=%@&country=%@&style=short", wsType, city, country];
 	urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSURL *url = [NSURL URLWithString:urlString];
-
-	// TODO: Timeout when service is unavailable
 	
+	// TODO: Timeout when service is unavailable
+
 	// Initialize our document with the XML data in our URL	
 	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:(NSStringEncoding)nil error:nil];
 
@@ -187,13 +188,13 @@
 - (NSString *)findISOforCountry:(NSString *)country
 {
 	if([country length]) {
-		NSString *urlString = [NSString stringWithFormat:@"http://ws.geonames.org/search?q=%@&featureCode=PCLI&maxRows=1", country];
+		NSString *urlString = [NSString stringWithFormat:@"http://%@.geonames.org/search?q=%@&featureCode=PCLI&maxRows=1", wsType, country];
 		urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 		NSURL *url = [NSURL URLWithString:urlString];
 
 		// Initialize our document with the XML data in our URL	
 		NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:url options:(NSStringEncoding)nil error:nil];
-
+		
 		// Get a reference to the root node and check if there are any results found
 		NSXMLElement *rootNode = [xmlDoc rootElement];
 		int totalResultsNode = [[[[rootNode elementsForName:@"totalResultsCount"] objectAtIndex:0] objectValue] intValue];
@@ -238,6 +239,24 @@
 	 */
 
 	return [tmp copy];
+}
+
+- (void)wsType
+{
+	wsType = @"ws";
+	NSString *urlString = @"http://ws.geonames.org/search";
+	NSURL *url = [NSURL URLWithString:urlString];
+	NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
+	NSData *urlData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+	NSXMLDocument *xmlDoc = [[NSXMLDocument alloc] initWithData:urlData options:(NSUInteger)nil error:nil];
+	NSXMLElement *rootNode = [xmlDoc rootElement];
+
+	if (rootNode == nil) {
+		NSLog(@"Fallback to ws5.geonames.org");
+		wsType = @"ws5";
+	} else {
+		NSLog(@"Normal service URL ws.geonames.org works");
+	}
 }
 
 @end
